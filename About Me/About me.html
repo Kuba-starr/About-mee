@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kudaiberdi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Rubik", sans-serif;
+        background: radial-gradient(
+          circle at top left,
+          #0f0c29,
+          #302b63,
+          #24243e
+        );
+        color: #fff;
+        min-height: 100vh;
+        padding: 20px;
+        overflow-x: hidden;
+        animation: bgMove 20s infinite alternate;
+      }
+      @keyframes bgMove {
+        0% {
+          background-position: left top;
+        }
+        100% {
+          background-position: right bottom;
+        }
+      }
+
+      header {
+        text-align: center;
+        padding: 60px 20px 30px;
+        animation: fadeInDown 1s ease;
+      }
+
+      header h1 {
+        font-size: 56px;
+        background: linear-gradient(to right, #00f2fe, #4facfe);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 10px rgba(79, 172, 254, 0.4);
+        transition: transform 0.3s;
+      }
+
+      header h1:hover {
+        transform: scale(1.05);
+      }
+
+      header p {
+        font-size: 20px;
+        color: #ccc;
+        margin-top: 10px;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 30px auto;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 25px;
+        border-left: 5px solid #00ffe1;
+        border-radius: 10px;
+        backdrop-filter: blur(5px);
+        animation: fadeInUp 0.8s ease both;
+        transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+      }
+
+      section:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 12px 34px rgba(0, 255, 225, 0.25);
+        border-color: #4facfe;
+      }
+
+      section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #00ffe1;
+        transition: color 0.3s;
+      }
+
+      section:hover h2 {
+        color: #ffffff;
+      }
+
+      section p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #e0e0e0;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 24px;
+        font-size: 16px;
+        background: #00ffe1;
+        color: #000;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background: #00bfa5;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 60px;
+        color: #888;
+        font-size: 14px;
+        animation: fadeIn 2s ease;
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 36px;
+        }
+        section h2 {
+          font-size: 20px;
+        }
+        section p {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Kudaiberdi</h1>
+      <p>Будуший Программист</p>
+    </header>
+
+    <section>
+      <h2>📘 Обо мне</h2>
+      <p>
+        Привет! Меня зовут Kudaiberdi, я родился 15 июля 2010 года. Я увлекаюсь
+        программированием и хочу стать настоящим профессионалом.
+      </p>
+    </section>
+
+    <section>
+      <h2>⚽ Моё хобби</h2>
+      <p>
+        В свободное время я люблю играть в футбол — это помогает мне отдыхать,
+        быть активным и энергичным.
+      </p>
+    </section>
+
+    <section>
+      <h2>👨‍👩‍👧‍👦 Моя семья</h2>
+      <p>
+        У нас в семье 5 детей: 3 девочки и 2 мальчика. Мы поддерживаем друг
+        друга, делимся радостью и смеёмся вместе.
+      </p>
+    </section>
+
+    <section>
+      <h2>📚 Я в школе</h2>
+      <p>
+        Я в данное время учусь в школе Сейтек-СТЕМ — это реально крутая школа!
+        Все уроки там идут на английском, и поэтому я хочу подтянуть свой
+        английский язык ещё лучше.
+      </p>
+    </section>
+
+    <section>
+      <h2>🌍 Моя мечта</h2>
+      <p>
+        Я мечтаю учиться за границей и жить там, развивать навыки в IT и
+        создавать проекты, полезные людям.
+      </p>
+      <a href="#" class="btn">Связаться со мной</a>
+    </section>
+    <footer>Сайт сделан Kudaiberdi © 2025</footer>
+  </body>
+</html>
